@@ -1,0 +1,193 @@
+{
+  "schema_version": 1,
+  "weight_policy": {
+    "version": 1,
+    "basis": "business_priority",
+    "core_min_share": 0.5
+  },
+  "gate_tests": [
+    "test_outputs.py::test_output_contract_creates_three_artifacts"
+  ],
+  "tests": {
+    "test_outputs.py::test_assignment_recovers_hidden_branch_mapping": {
+      "weight": 0.13,
+      "priority": "core",
+      "rationale": "从聚合观测恢复未知映射、热滞后和散热系数是本题不可替代的核心推理轴。"
+    },
+    "test_outputs.py::test_lag_and_loss_are_recovered": {
+      "weight": 0.13,
+      "priority": "core",
+      "rationale": "从聚合观测恢复未知映射、热滞后和散热系数是本题不可替代的核心推理轴。"
+    },
+    "test_outputs.py::test_aggregate_heat_history_closes": {
+      "weight": 0.13,
+      "priority": "core",
+      "rationale": "从聚合观测恢复未知映射、热滞后和散热系数是本题不可替代的核心推理轴。"
+    },
+    "test_outputs.py::test_selection_minimizes_total_pump_power": {
+      "weight": 0.13,
+      "priority": "core",
+      "rationale": "从聚合观测恢复未知映射、热滞后和散热系数是本题不可替代的核心推理轴。"
+    },
+    "test_outputs.py::test_success_output_channels_are_silent": {
+      "weight": 0.015,
+      "priority": "supporting",
+      "rationale": "该行为保护反演交接的结构、边界和跨运行状态一致性。"
+    },
+    "test_outputs.py::test_top_level_keys_reject_missing_field": {
+      "weight": 0.015,
+      "priority": "supporting",
+      "rationale": "该行为保护反演交接的结构、边界和跨运行状态一致性。"
+    },
+    "test_outputs.py::test_terminal_keys_reject_extra_field": {
+      "weight": 0.015,
+      "priority": "supporting",
+      "rationale": "该行为保护反演交接的结构、边界和跨运行状态一致性。"
+    },
+    "test_outputs.py::test_branch_keys_reject_extra_field": {
+      "weight": 0.015,
+      "priority": "supporting",
+      "rationale": "该行为保护反演交接的结构、边界和跨运行状态一致性。"
+    },
+    "test_outputs.py::test_aggregate_keys_reject_missing_field": {
+      "weight": 0.015,
+      "priority": "supporting",
+      "rationale": "该行为保护反演交接的结构、边界和跨运行状态一致性。"
+    },
+    "test_outputs.py::test_pump_option_keys_reject_extra_field": {
+      "weight": 0.015,
+      "priority": "supporting",
+      "rationale": "该行为保护反演交接的结构、边界和跨运行状态一致性。"
+    },
+    "test_outputs.py::test_profile_length_accepts_eight_values": {
+      "weight": 0.015,
+      "priority": "supporting",
+      "rationale": "该行为保护反演交接的结构、边界和跨运行状态一致性。"
+    },
+    "test_outputs.py::test_profile_length_rejects_seven_values": {
+      "weight": 0.015,
+      "priority": "supporting",
+      "rationale": "该行为保护反演交接的结构、边界和跨运行状态一致性。"
+    },
+    "test_outputs.py::test_duplicate_identifiers_are_refused": {
+      "weight": 0.015,
+      "priority": "supporting",
+      "rationale": "该行为保护反演交接的结构、边界和跨运行状态一致性。"
+    },
+    "test_outputs.py::test_boolean_schema_version_is_refused": {
+      "weight": 0.015,
+      "priority": "supporting",
+      "rationale": "该行为保护反演交接的结构、边界和跨运行状态一致性。"
+    },
+    "test_outputs.py::test_maximum_network_size_is_supported": {
+      "weight": 0.015,
+      "priority": "supporting",
+      "rationale": "该行为保护反演交接的结构、边界和跨运行状态一致性。"
+    },
+    "test_outputs.py::test_every_branch_needs_a_pump_option": {
+      "weight": 0.015,
+      "priority": "supporting",
+      "rationale": "该行为保护反演交接的结构、边界和跨运行状态一致性。"
+    },
+    "test_outputs.py::test_report_bytes_end_with_newline": {
+      "weight": 0.015,
+      "priority": "supporting",
+      "rationale": "该行为保护反演交接的结构、边界和跨运行状态一致性。"
+    },
+    "test_outputs.py::test_report_key_set_is_exact": {
+      "weight": 0.015,
+      "priority": "supporting",
+      "rationale": "该行为保护反演交接的结构、边界和跨运行状态一致性。"
+    },
+    "test_outputs.py::test_assignment_item_key_set_is_exact": {
+      "weight": 0.015,
+      "priority": "supporting",
+      "rationale": "该行为保护反演交接的结构、边界和跨运行状态一致性。"
+    },
+    "test_outputs.py::test_topology_item_key_set_is_exact": {
+      "weight": 0.015,
+      "priority": "supporting",
+      "rationale": "该行为保护反演交接的结构、边界和跨运行状态一致性。"
+    },
+    "test_outputs.py::test_selection_item_key_set_is_exact": {
+      "weight": 0.015,
+      "priority": "supporting",
+      "rationale": "该行为保护反演交接的结构、边界和跨运行状态一致性。"
+    },
+    "test_outputs.py::test_summary_key_set_is_exact": {
+      "weight": 0.015,
+      "priority": "supporting",
+      "rationale": "该行为保护反演交接的结构、边界和跨运行状态一致性。"
+    },
+    "test_outputs.py::test_aggregate_return_history_closes": {
+      "weight": 0.015,
+      "priority": "supporting",
+      "rationale": "该行为保护反演交接的结构、边界和跨运行状态一致性。"
+    },
+    "test_outputs.py::test_loss_and_lag_range_is_preserved": {
+      "weight": 0.015,
+      "priority": "supporting",
+      "rationale": "该行为保护反演交接的结构、边界和跨运行状态一致性。"
+    },
+    "test_outputs.py::test_topology_connects_nearest_lower_pressure": {
+      "weight": 0.015,
+      "priority": "supporting",
+      "rationale": "该行为保护反演交接的结构、边界和跨运行状态一致性。"
+    },
+    "test_outputs.py::test_selection_is_sorted_by_terminal_id": {
+      "weight": 0.015,
+      "priority": "supporting",
+      "rationale": "该行为保护反演交接的结构、边界和跨运行状态一致性。"
+    },
+    "test_outputs.py::test_repeated_run_keeps_report_bytes": {
+      "weight": 0.015,
+      "priority": "supporting",
+      "rationale": "该行为保护反演交接的结构、边界和跨运行状态一致性。"
+    },
+    "test_outputs.py::test_repeated_run_does_not_append_ledger": {
+      "weight": 0.015,
+      "priority": "supporting",
+      "rationale": "该行为保护反演交接的结构、边界和跨运行状态一致性。"
+    },
+    "test_outputs.py::test_changed_digest_appends_ledger": {
+      "weight": 0.015,
+      "priority": "supporting",
+      "rationale": "该行为保护反演交接的结构、边界和跨运行状态一致性。"
+    },
+    "test_outputs.py::test_ledger_line_has_exact_keys": {
+      "weight": 0.015,
+      "priority": "supporting",
+      "rationale": "该行为保护反演交接的结构、边界和跨运行状态一致性。"
+    },
+    "test_outputs.py::test_checkpoint_has_exact_keys": {
+      "weight": 0.015,
+      "priority": "supporting",
+      "rationale": "该行为保护反演交接的结构、边界和跨运行状态一致性。"
+    },
+    "test_outputs.py::test_missing_key_is_refused": {
+      "weight": 0.015,
+      "priority": "supporting",
+      "rationale": "该行为保护反演交接的结构、边界和跨运行状态一致性。"
+    },
+    "test_outputs.py::test_duplicate_json_key_is_refused": {
+      "weight": 0.015,
+      "priority": "supporting",
+      "rationale": "该行为保护反演交接的结构、边界和跨运行状态一致性。"
+    },
+    "test_outputs.py::test_refusal_uses_fixed_stderr_prefix": {
+      "weight": 0.015,
+      "priority": "supporting",
+      "rationale": "该行为保护反演交接的结构、边界和跨运行状态一致性。"
+    },
+    "test_outputs.py::test_trunk_limit_rejects_oversized_selection": {
+      "weight": 0.015,
+      "priority": "supporting",
+      "rationale": "该行为保护反演交接的结构、边界和跨运行状态一致性。"
+    },
+    "test_outputs.py::test_refusal_preserves_existing_artifacts": {
+      "weight": 0.015,
+      "priority": "supporting",
+      "rationale": "该行为保护反演交接的结构、边界和跨运行状态一致性。"
+    }
+  }
+}
