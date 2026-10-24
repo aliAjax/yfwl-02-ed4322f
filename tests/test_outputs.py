@@ -236,6 +236,15 @@ def test_boolean_schema_version_is_refused(tmp_path):
     assert not (output_dir / "report.json").exists()
 
 
+def test_schema_version_must_be_integer_one(tmp_path):
+    """题面：「`schema_version` 必须是整数 `1`。」"""
+    case = _case()
+    case["schema_version"] = 2
+    proc, report, output_dir = _run(case, tmp_path)
+    assert proc.returncode == 2
+    assert not (output_dir / "report.json").exists()
+
+
 def test_maximum_network_size_is_supported(tmp_path):
     """题面：「接管名单最多包含 8 条支路和 8 个端点。」"""
     proc, report, output_dir = _run(_case(terminal_count=8), tmp_path)
@@ -266,6 +275,8 @@ def test_report_key_set_is_exact(tmp_path):
     """题面：「供热输出对象包含七个成员：schema_version,run_id,network_id,assignments,topology,selection,summary。」"""
     proc, report, output_dir = _run(_case(), tmp_path)
     assert proc.returncode == 0
+    assert type(report["schema_version"]) is int
+    assert report["schema_version"] == 1
     assert set(report) == {
         "schema_version",
         "run_id",

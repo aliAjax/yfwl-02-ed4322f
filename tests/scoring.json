@@ -6,7 +6,8 @@
     "core_min_share": 0.5
   },
   "gate_tests": [
-    "test_outputs.py::test_output_contract_creates_three_artifacts"
+    "test_outputs.py::test_output_contract_creates_three_artifacts",
+    "test_outputs.py::test_schema_version_must_be_integer_one"
   ],
   "tests": {
     "test_outputs.py::test_assignment_recovers_hidden_branch_mapping": {

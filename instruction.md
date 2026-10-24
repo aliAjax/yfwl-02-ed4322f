@@ -8,6 +8,8 @@
 
 管网交接 JSON 的最外层字段为 schema_version,run_id,network_id,terminal_demands,branch_records,aggregate_observations,pump_options,trunk_limit_m3h。
 
+`schema_version` 必须是整数 `1`，布尔值、字符串、浮点数和其它整数均拒收。成功报告中的 `schema_version` 也必须写成整数 `1`。
+
 用户端点记录包含 terminal_id,flow_profile,load_temp_profile,required_flow_m3h,static_pressure_pa 五个槽位。
 
 支路记录包含 record_id,return_temp,pressure_pa 三个槽位。
